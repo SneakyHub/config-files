@@ -1,0 +1,95 @@
+server_id: 825699580779823125
+config:
+  prefix: -
+  clear_commands: true
+channel_groups:
+- channels:
+  - 828253375387795486
+  mentions:
+    ping:
+      reaction:
+      - 👋
+      response:
+      - "I see I was pinged."
+    mention:
+      reaction:
+      - 👋
+      response:
+      - ""
+  commands:
+  - command: test
+    response:
+    - "This is the response to the &prefix&test command"
+  - command: links
+    response:
+    - "Dashboard: https://dash.sneakyhub.com/"
+    - "Panel: https://panel.sneakyhub.com/"
+    - "Status: https://status.sneakyhub.com/"
+    - "Perm Invite: https://sneakyhub.com/discord"
+    - "Github: https://github.com/SneakyHub"
+    - "*thank you for using SneakyHub*"
+  keywords:
+  - keyword: test
+    reaction:
+    - ""
+    response:
+    - "I have responded to seeing the word test."
+  - keyword: client role
+    reaction:
+    - ""
+    response:
+    - "You are automatically given the client role once you have verified your discord account on our dashboard @ https://dash.sneakyhub.com/"
+  - keyword: maintenance mode
+    reaction:
+    - ""
+    response:
+    - "We may be in maintenance mode, please check our <#845067123788480562> channel."
+  - keyword: earn credits
+    reaction:
+    - ""
+    response:
+    - "If you want to earn credits for free please head over to <#862164039966916608> and do the following commands. `sh!beg`, `sh!work`, `sh!daily` & `sh!weekly`"
+  - keyword: more credits
+    reaction:
+    - ""
+    response:
+    - "If you want to earn credits for free please head over to <#862164039966916608> and do the following commands. `sh!beg`, `sh!work`, `sh!daily` & `sh!weekly`"
+  - keyword: host commands
+    reaction:
+    - ""
+    response:
+    - "Our <#827164898336440321> channel is being discontinued, everything will be done through https://dash.sneakyhub.com/"
+  - keyword: upgrade my server
+    reaction:
+    - ""
+    response:
+    - "Currently the only way you can upgrade your server is by backing up your server files, deleting the server and remaking it with more resources."
+  - keyword: panel
+    reaction:
+    - ""
+    response:
+    - "Our web panel is https://panel.sneakyhub.com/"
+  - keyword: dash
+    reaction:
+    - ""
+    response:
+    - "Our dashboard is https://dash.sneakyhub.com/"
+  parsing:
+    image:
+      filetypes:
+      - png
+      - jpg
+    paste:
+      sites:
+      - name: pastebin
+        url: 'https://pastebin.com/'
+        format: 'https://pastebin.com/raw/&filename&'
+      - name: hastebin
+        url: 'https://hastebin.com/'
+        format: 'https://hastebin.com/raw/&filename&'
+permissions:
+- group: admin
+filters:
+- term: a bad word
+  reason:
+  - the message was removed because it had 'a bad word' in it
