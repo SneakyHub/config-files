@@ -34,6 +34,12 @@ channel_groups:
     - ""
     response:
     - "I have responded to seeing the word test."
+  - keyword: testresponse
+    reaction:
+    - ""
+    response:
+    - "Test one two three."
+
   - keyword: client role
     reaction:
     - ""
