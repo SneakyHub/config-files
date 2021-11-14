@@ -1,0 +1,18 @@
+(
+    gameserver_address: "0.0.0.0:14004",
+    metrics_address: "0.0.0.0:14005",
+    auth_server_address: Some("https://auth.veloren.net"),
+    max_players: 100,
+    world_seed: 25269,
+    server_name: "SneakyHub Veloren Server",
+    start_time: 32400,
+    map_file: None,
+    max_view_distance: Some(16),
+    banned_words_files: [],
+    max_player_group_size: 6,
+    client_timeout: (
+        secs: 40,
+        nanos: 0,
+    ),
+    spawn_town: None,
+)
